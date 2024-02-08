@@ -1,10 +1,10 @@
+import 'package:chatgpt_clone/screens/splash-screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'constants/constant.dart';
 import 'providers/chats_provider.dart';
 import 'providers/models_provider.dart';
-import 'screens/chat_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
             appBarTheme: AppBarTheme(
               color: cardColor,
             )),
-        home: const ChatScreen(),
+        home: const SplashScreen(),
       ),
     );
   }
