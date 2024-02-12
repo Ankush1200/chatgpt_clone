@@ -52,14 +52,14 @@ class _ChatScreenState extends State<ChatScreen> {
           child: Image.asset(AssetsManagesr.openAIlogo),
         ),
         title: const Text("ChatGPT Clone"),
-        actions: [
-          IconButton(
-            onPressed: () async {
-              await Services.showModalSheet(context: context);
-            },
-            icon: const Icon(Icons.more_vert_rounded, color: Colors.white),
-          ),
-        ],
+        // actions: [
+        //   IconButton(
+        //     onPressed: () async {
+        //       await Services.showModalSheet(context: context);
+        //     },
+        //     icon: const Icon(Icons.more_vert_rounded, color: Colors.white),
+        //   ),
+        // ],
       ),
       body: SafeArea(
         child: Column(
@@ -106,7 +106,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         },
                         decoration: const InputDecoration.collapsed(
                             hintText: "Hey how can I assist you today ?",
-                            hintStyle: TextStyle(color: Colors.grey)),
+                            hintStyle: TextStyle(color: Colors.white)),
                       ),
                     ),
                     IconButton(
